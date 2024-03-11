@@ -6,3 +6,4 @@ venv
 .state
 *.swp
 __pycache__
+/staticfiles

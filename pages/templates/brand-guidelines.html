@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_js %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+{% endblock %}
+{% block content %}
+<div>
+  <h1>Philly Bike Action Brand Guidelines</h1>
+</div>
+<div>
+  <h2>Logo</h2>
+  <p>Our brand has two colors, no preference</p>
+  <div>
+    <img style="width: 10em;" src="{% static 'images/brand/PBA_pink_alpha.png' %}"></img>
+    <br>
+    <a download href="{% static 'images/brand/PBA_pink_alpha.png' %}">Download</a>
+  </div>
+  <div>
+    <img style="width: 10em;" src="{% static 'images/brand/PBA_green_alpha.png' %}"></img>
+    <br>
+    <a download href="{% static 'images/brand/PBA_green_alpha.png' %}">Download</a>
+  </div>
+  <p>Extra graphics, not official:</p>
+  <div>
+    <img style="width: 10em;" src="{% static 'images/brand/PBA_Discord_Green.png' %}"></img>
+    <br>
+    <a download href="{% static 'images/brand/PBA_Discord_Green.png' %}">Download</a>
+  </div>
+  <div>
+    <img style="width: 10em;" src="{% static 'images/brand/PBA_BW.png' %}"></img>
+    <br>
+    <a download href="{% static 'images/brand/PBA_BW.png' %}">Download</a>
+  </div>
+  <p>! is for logo and graphics but not in official communication</p>
+</div>
+<div>
+  <h2>Colors</h2>
+  <div>
+    <div style="width: 8em; height: 8em; background-color: #70bf44;"></div>
+  </div>
+  <div>
+    <div style="width: 8em; height: 8em; background-color: #d8107d;"></div>
+  </div>
+  <table>
+    <tr><td></td><th>Hex</th><th>rgba</th></tr>
+    <tr><th>Green</th><td><button class="copyable">📄</button><code>#70bf44</code></td><td><button class="copyable">📄</button><code>rgba(112,191,68,255)</code></td></tr>
+    <tr><th>Pink</th><td><button class="copyable">📄</button><code>#d8107d</code></td><td><button class="copyable">📄</button><code>rgba(216,16,125,255)</code></td></tr>
+  </table>
+</div>
+<div>
+  <h2>Fonts</h2>
+</div>
+<div>
+  <h2>Disclaimers</h2>
+  <button class="copyable">📄</button><p>Philly Bike Action is a social welfare organization incorporated in the Commonwealth of Pennsylvania. Contributions to Philly Bike Action are not deductible as charitable contributions for federal income tax purposes.</p>
+</div>
+<div>
+  <h2>Hashtags</h2>
+  <button class="copyable">📄</button><p>#phillybikelife #phillycycling #ibikephl #safestreets #visionzero #phillyisgreatforcycling #bikephilly</p>
+</div>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script>
+  new ClipboardJS(".copyable", {
+    text: function(trigger) {
+      trigger._tippy.setContent('Copied!');
+      trigger._tippy.show();
+      setInterval(function(){trigger._tippy.hide();trigger._tippy.setContent('Click to copy!');},2000)
+      return trigger.nextElementSibling.textContent;
+    }
+  });
+  tippy('.copyable', {content: 'Click to copy!',});
+</script>
+{% endblock %}
