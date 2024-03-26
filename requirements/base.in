@@ -23,4 +23,5 @@ mailchimp3
 pillow
 psycopg2-binary
 sentry-sdk[django]
+wagtail
 whitenoise

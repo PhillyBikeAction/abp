@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% load wagtailcore_tags %}
+{% load wagtailuserbar %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block title %}
+    {{ page.title }}
+{% endblock %}
+
+{% block content %}
+<div class="content-container">
+  {% wagtailuserbar %}
+  {% include_block page.intro %}
+</div>
+{% endblock %}

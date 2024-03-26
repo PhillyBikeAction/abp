@@ -64,6 +64,20 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    # Wagtail
+    "wagtail.embeds",
+    "wagtail.sites",
+    "wagtail.users",
+    "wagtail.snippets",
+    "wagtail.documents",
+    "wagtail.images",
+    "wagtail.search",
+    "wagtail.admin",
+    "wagtail",
+    "taggit",
+    "modelcluster",
+    "wagtail.contrib.table_block",
+    "wagtail.contrib.typed_table_block",
     # Addons
     "allauth",
     "allauth.account",
@@ -80,6 +94,7 @@ INSTALLED_APPS = [
     "sitetree",
     "django_tuieditor",
     # Our apps
+    "cms",
     "pbaabp",
     "pages",
     "membership",
@@ -158,6 +173,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# Wagtail
+
+WAGTAIL_SITE_NAME = "Philly Bike Action"
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
@@ -179,6 +197,9 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
+
+MEDIA_ROOT = BASE_DIR / "media"
+MEDIA_URL = "/media/"
 
 STORAGES = {
     "default": {"BACKEND": "django.core.files.storage.FileSystemStorage"},

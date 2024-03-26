@@ -4,15 +4,17 @@
 #
 #    pip-compile requirements/base.in
 #
-aiohttp==3.9.2
+aiohttp==3.9.3
     # via discord-py-interactions
 aiosignal==1.3.1
     # via aiohttp
 amqp==5.2.0
     # via kombu
-asgiref==3.7.2
+anyascii==0.3.2
+    # via wagtail
+asgiref==3.8.1
     # via
-    #   -r base.in
+    #   -r requirements/base.in
     #   channels
     #   daphne
     #   django
@@ -28,19 +30,23 @@ autobahn==23.6.2
     # via daphne
 automat==22.10.0
     # via twisted
+beautifulsoup4==4.12.3
+    # via wagtail
 billiard==4.2.0
     # via celery
 bleach[css]==6.1.0
-    # via django-markdownfield
-boto3==1.34.71
+    # via
+    #   bleach
+    #   django-markdownfield
+boto3==1.34.73
     # via django-storages
-botocore==1.34.71
+botocore==1.34.73
     # via
     #   boto3
     #   s3transfer
 celery[redis]==5.3.6
-    # via -r base.in
-certifi==2023.11.17
+    # via -r requirements/base.in
+certifi==2024.2.2
     # via
     #   requests
     #   sentry-sdk
@@ -49,7 +55,7 @@ cffi==1.16.0
     #   cmarkgfm
     #   cryptography
 channels[daphne]==4.0.0
-    # via -r base.in
+    # via -r requirements/base.in
 charset-normalizer==3.3.2
     # via requests
 click==8.1.7
@@ -58,7 +64,7 @@ click==8.1.7
     #   click-didyoumean
     #   click-plugins
     #   click-repl
-click-didyoumean==0.3.0
+click-didyoumean==0.3.1
     # via celery
 click-plugins==1.1.1
     # via celery
@@ -66,73 +72,103 @@ click-repl==0.3.0
     # via celery
 cmarkgfm==2024.1.14
     # via
-    #   -r base.in
+    #   -r requirements/base.in
     #   django-tuieditor
 constantly==23.10.4
     # via twisted
-cryptography==42.0.4
+cryptography==42.0.5
     # via
     #   autobahn
     #   pyjwt
     #   pyopenssl
     #   service-identity
-daphne==4.0.0
+daphne==4.1.0
     # via channels
 defusedxml==0.7.1
-    # via python3-openid
+    # via
+    #   python3-openid
+    #   willow
 discord-py-interactions==5.11.0
-    # via -r base.in
-discord-typings==0.7.0
+    # via -r requirements/base.in
+discord-typings==0.8.0
     # via discord-py-interactions
 dj-stripe==2.8.3
-    # via -r base.in
+    # via -r requirements/base.in
 django==4.2.11
     # via
-    #   -r base.in
+    #   -r requirements/base.in
     #   channels
     #   dj-stripe
     #   django-allauth
     #   django-email-log
+    #   django-filter
     #   django-htmx
     #   django-markdownfield
+    #   django-modelcluster
     #   django-multi-email-field
+    #   django-permissionedforms
     #   django-recaptcha
     #   django-sesame
     #   django-storages
+    #   django-taggit
+    #   django-treebeard
     #   django-tuieditor
+    #   djangorestframework
+    #   laces
     #   sentry-sdk
+    #   wagtail
 django-allauth[mfa]==0.61.1
-    # via -r base.in
+    # via -r requirements/base.in
 django-dotenv==1.4.2
-    # via -r base.in
+    # via -r requirements/base.in
 django-email-log==1.4.0
-    # via -r base.in
+    # via -r requirements/base.in
 django-environ==0.11.2
-    # via -r base.in
+    # via -r requirements/base.in
+django-filter==23.5
+    # via wagtail
 django-htmx==1.17.3
-    # via -r base.in
+    # via -r requirements/base.in
 django-markdownfield==0.11.0
-    # via -r base.in
+    # via -r requirements/base.in
+django-modelcluster==6.3
+    # via wagtail
 django-multi-email-field==0.7.0
-    # via -r base.in
+    # via -r requirements/base.in
 django-ordered-model==3.7.4
-    # via -r base.in
+    # via -r requirements/base.in
+django-permissionedforms==0.1
+    # via wagtail
 django-recaptcha==4.0.0
-    # via -r base.in
+    # via -r requirements/base.in
 django-sesame==3.2.2
-    # via -r base.in
+    # via -r requirements/base.in
 django-sitetree==1.18.0
-    # via -r base.in
+    # via -r requirements/base.in
 django-storages[s3]==1.14.2
-    # via -r base.in
+    # via -r requirements/base.in
+django-taggit==5.0.1
+    # via wagtail
+django-treebeard==4.7.1
+    # via wagtail
 django-tuieditor==0.2.0
-    # via -r base.in
-emoji==2.10.0
+    # via -r requirements/base.in
+djangorestframework==3.15.1
+    # via wagtail
+draftjs-exporter==5.0.0
+    # via wagtail
+emoji==2.11.0
     # via discord-py-interactions
+et-xmlfile==1.1.0
+    # via openpyxl
+filetype==1.2.0
+    # via willow
 frozenlist==1.4.1
     # via
     #   aiohttp
     #   aiosignal
+html5lib==1.1
+    # via wagtail
 hyperlink==21.0.0
     # via
     #   autobahn
@@ -149,47 +185,64 @@ jmespath==1.0.1
     # via
     #   boto3
     #   botocore
-kombu==5.3.5
+kombu==5.3.6
     # via celery
+l18n==2021.3
+    # via wagtail
+laces==0.1.1
+    # via wagtail
 mailchimp3==3.0.21
-    # via -r base.in
+    # via -r requirements/base.in
 markdown==3.6
     # via django-markdownfield
-multidict==6.0.4
+multidict==6.0.5
     # via
     #   aiohttp
     #   yarl
 oauthlib==3.2.2
     # via requests-oauthlib
+openpyxl==3.1.2
+    # via wagtail
 pillow==10.2.0
-    # via -r base.in
+    # via
+    #   -r requirements/base.in
+    #   pillow-heif
+    #   wagtail
+pillow-heif==0.15.0
+    # via willow
 prompt-toolkit==3.0.43
     # via click-repl
 psycopg2-binary==2.9.9
-    # via -r base.in
-pyasn1==0.5.1
+    # via -r requirements/base.in
+pyasn1==0.6.0
     # via
     #   pyasn1-modules
     #   service-identity
-pyasn1-modules==0.3.0
+pyasn1-modules==0.4.0
     # via service-identity
 pycparser==2.21
     # via cffi
 pyjwt[crypto]==2.8.0
-    # via django-allauth
-pyopenssl==24.0.0
+    # via
+    #   django-allauth
+    #   pyjwt
+pyopenssl==24.1.0
     # via twisted
 pypng==0.20220715.0
     # via qrcode
-python-dateutil==2.8.2
+python-dateutil==2.9.0.post0
     # via
     #   botocore
     #   celery
 python3-openid==3.2.0
     # via django-allauth
+pytz==2024.1
+    # via
+    #   django-modelcluster
+    #   l18n
 qrcode==7.4.2
     # via django-allauth
-redis==5.0.1
+redis==5.0.3
     # via celery
 requests==2.31.0
     # via
@@ -197,12 +250,13 @@ requests==2.31.0
     #   mailchimp3
     #   requests-oauthlib
     #   stripe
-requests-oauthlib==1.3.1
+    #   wagtail
+requests-oauthlib==2.0.0
     # via django-allauth
 s3transfer==0.10.1
     # via boto3
-sentry-sdk[django]==1.40.6
-    # via -r base.in
+sentry-sdk[django]==1.44.0
+    # via -r requirements/base.in
 service-identity==24.1.0
     # via twisted
 shortuuid==1.0.13
@@ -211,27 +265,35 @@ six==1.16.0
     # via
     #   automat
     #   bleach
+    #   html5lib
+    #   l18n
     #   python-dateutil
+soupsieve==2.5
+    # via beautifulsoup4
 sqlparse==0.4.4
     # via django
 stripe==4.2.0
     # via dj-stripe
+telepath==0.3.1
+    # via wagtail
 tinycss2==1.2.1
     # via bleach
 tomli==2.0.1
     # via discord-py-interactions
-twisted[tls]==23.10.0
-    # via daphne
+twisted[tls]==24.3.0
+    # via
+    #   daphne
+    #   twisted
 txaio==23.1.1
     # via autobahn
-typing-extensions==4.9.0
+typing-extensions==4.10.0
     # via
     #   discord-typings
     #   qrcode
     #   twisted
-tzdata==2023.4
+tzdata==2024.1
     # via celery
-urllib3==2.1.0
+urllib3==2.2.1
     # via
     #   botocore
     #   requests
@@ -241,17 +303,24 @@ vine==5.1.0
     #   amqp
     #   celery
     #   kombu
+wagtail==6.0.1
+    # via -r requirements/base.in
 wcwidth==0.2.13
     # via prompt-toolkit
 webencodings==0.5.1
     # via
     #   bleach
+    #   html5lib
     #   tinycss2
 whitenoise==6.6.0
-    # via -r base.in
+    # via -r requirements/base.in
+willow[heif]==1.8.0
+    # via
+    #   wagtail
+    #   willow
 yarl==1.9.4
     # via aiohttp
-zope-interface==6.1
+zope-interface==6.2
     # via twisted
 
 # The following packages are considered to be unsafe in a requirements file:

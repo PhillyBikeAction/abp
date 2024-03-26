@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load wagtailuserbar %}
+
+{% load static %}
+{% load wagtailcore_tags %}
+
+{% block body_class %}template-cmspage{% endblock %}
+
+{% block title %}
+    - {{ page.title }}
+{% endblock %}
+
+{% block content %}
+    <div class="cms-title">
+      <h1>{{ page.title }}</h1>
+    </div>
+    <div class="cms-body">
+      <div class="content-container">
+        {% include_block page.body %}
+        {% wagtailuserbar %}
+      </div>
+    </div>
+{% endblock %}
