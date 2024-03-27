@@ -1,6 +1,7 @@
 Celery[redis]
 Django
 asgiref
+django-storages[s3]
 channels[daphne]
 cmarkgfm
 cmarkgfm
@@ -19,6 +20,7 @@ django-sesame
 django-sitetree
 django-tuieditor
 mailchimp3
+pillow
 psycopg2-binary
 sentry-sdk[django]
 whitenoise

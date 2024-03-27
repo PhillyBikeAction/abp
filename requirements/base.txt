@@ -34,6 +34,12 @@ bleach[css]==6.1.0
     # via
     #   bleach
     #   django-markdownfield
+boto3==1.34.71
+    # via django-storages
+botocore==1.34.71
+    # via
+    #   boto3
+    #   s3transfer
 celery[redis]==5.3.6
     # via -r requirements/base.in
 certifi==2023.11.17
@@ -94,6 +100,7 @@ django==4.2.9
     #   django-multi-email-field
     #   django-recaptcha
     #   django-sesame
+    #   django-storages
     #   django-tuieditor
     #   sentry-sdk
 django-allauth[mfa]==0.61.1
@@ -118,6 +125,8 @@ django-sesame==3.2.2
     # via -r requirements/base.in
 django-sitetree==1.18.0
     # via -r requirements/base.in
+django-storages[s3]==1.14.2
+    # via -r requirements/base.in
 django-tuieditor==0.2.0
     # via -r requirements/base.in
 emoji==2.10.0
@@ -138,6 +147,10 @@ idna==3.6
     #   yarl
 incremental==22.10.0
     # via twisted
+jmespath==1.0.1
+    # via
+    #   boto3
+    #   botocore
 kombu==5.3.5
     # via celery
 mailchimp3==3.0.21
@@ -150,6 +163,8 @@ multidict==6.0.4
     #   yarl
 oauthlib==3.2.2
     # via requests-oauthlib
+pillow==10.2.0
+    # via -r requirements/base.in
 prompt-toolkit==3.0.43
     # via click-repl
 psycopg2-binary==2.9.9
@@ -171,7 +186,9 @@ pyopenssl==24.0.0
 pypng==0.20220715.0
     # via qrcode
 python-dateutil==2.8.2
-    # via celery
+    # via
+    #   botocore
+    #   celery
 python3-openid==3.2.0
     # via django-allauth
 qrcode==7.4.2
@@ -186,6 +203,8 @@ requests==2.31.0
     #   stripe
 requests-oauthlib==1.3.1
     # via django-allauth
+s3transfer==0.10.1
+    # via boto3
 sentry-sdk[django]==1.40.6
     # via -r requirements/base.in
 service-identity==24.1.0
@@ -220,6 +239,7 @@ tzdata==2023.4
     # via celery
 urllib3==2.1.0
     # via
+    #   botocore
     #   requests
     #   sentry-sdk
 vine==5.1.0

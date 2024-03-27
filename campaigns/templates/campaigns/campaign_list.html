@@ -6,7 +6,7 @@
   <div class="campaign-card">
     <a href="{% url 'campaign' slug=campaign.slug %}">
       <h2>{{ campaign.title }}</h2>
-      <img class="campaign-card-img" src="{{ campaign.cover }}">
+      <img class="campaign-card-img" src="{{ campaign.cover.url }}">
       <p>{{ campaign.description }}</p>
     </a>
   </div>

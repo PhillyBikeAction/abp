@@ -39,7 +39,7 @@ class Campaign(models.Model):
     slug = models.SlugField(null=True, blank=True)
     status = models.CharField(max_length=16, choices=Status.choices)
     description = models.TextField(null=True, blank=True)
-    cover = models.URLField(null=True, blank=True)
+    cover = models.ImageField(upload_to="campaigns", null=True, blank=True)
 
     content = MarkdownField(rendered_field="content_rendered", validator=VALIDATOR_NULL)
     content_rendered = RenderedMarkdownField()

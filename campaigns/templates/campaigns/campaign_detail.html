@@ -5,13 +5,13 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="{{ campaign.title }}">
 <meta property="og:url" content="https://bikeaction.org/campaigns/{{ campaign.slug }}">
-<meta property="og:image" content="{{ campaign.cover }}">
+<meta property="og:image" content="{{ campaign.cover.url }}">
 <meta property="og:description" content="{{ campaign.description }}">
 {% endblock %}
 
 {% block content %}
 <div class="campaign-header">
-    <div class="campaign-header-img" style="background: url({{ campaign.cover }}); background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
+    <div class="campaign-header-img" style="background: url({{ campaign.cover.url }}); background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
     <h1>{{ campaign.title }}</h1>
 </div>
 <div class="campaign-container">
