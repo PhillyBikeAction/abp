@@ -6,13 +6,11 @@
 #
 click==8.1.7
     # via uvicorn
-gunicorn==21.2.0
-    # via -r requirements/deploy.in
+gunicorn==22.0.0
+    # via -r deploy.in
 h11==0.14.0
     # via uvicorn
 packaging==23.2
     # via gunicorn
-typing-extensions==4.9.0
-    # via uvicorn
 uvicorn==0.27.0
-    # via -r requirements/deploy.in
+    # via -r deploy.in
