@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-05 11:44-0400\n"
-"PO-Revision-Date: 2024-07-05 16:11+0000\n"
-"Last-Translator: Ee Durbin <bikes@durbin.ee>\n"
+"PO-Revision-Date: 2024-07-05 20:09+0000\n"
+"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/"
 "philly-bike-action/apps-bikeaction-org-django/es/>\n"
 "Language: es\n"
@@ -26,32 +26,32 @@ msgstr "%(petition.comments)s Comentarios"
 
 #: campaigns/templates/campaigns/_partial_signatures.html:15
 msgid "Recent comments..."
-msgstr ""
+msgstr "Comentarios recientes..."
 
 #: campaigns/templates/campaigns/campaign_detail.html:23
 #: campaigns/templates/campaigns/campaign_detail.html:34
 msgid "Take Action Now!"
-msgstr ""
+msgstr "¡Tomar medidas ahora!"
 
 #: campaigns/templates/campaigns/campaign_detail.html:27
 msgid "This campaign has been completed."
-msgstr ""
+msgstr "Esta campaña ha sido completada."
 
 #: campaigns/templates/campaigns/campaign_detail.html:38
 msgid "Make a donation"
-msgstr ""
+msgstr "Haz una donación"
 
 #: campaigns/templates/campaigns/campaign_detail.html:39
 msgid "Donate Now!"
-msgstr ""
+msgstr "¡Donar ahora!"
 
 #: campaigns/templates/campaigns/campaign_detail.html:46
 msgid "🎉 Thank you for being a supporter 🎉"
-msgstr ""
+msgstr "🎉Gracias por ser nuestro seguidor 🎉"
 
 #: campaigns/templates/campaigns/campaign_detail.html:47
 msgid "Manage your recurring donation"
-msgstr ""
+msgstr "Gestiona tu donación recurrente"
 
 #: campaigns/templates/campaigns/campaign_detail.html:51
 msgid "Become a monthly supporter"
