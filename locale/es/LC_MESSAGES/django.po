@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-05 11:44-0400\n"
-"PO-Revision-Date: 2024-07-05 16:05+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2024-07-05 16:11+0000\n"
+"Last-Translator: Ee Durbin <bikes@durbin.ee>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/"
 "philly-bike-action/apps-bikeaction-org-django/es/>\n"
 "Language: es\n"
@@ -22,7 +22,7 @@ msgstr ""
 #: campaigns/templates/campaigns/_partial_signatures.html:14
 #, python-format
 msgid "%(petition.comments)s Comments"
-msgstr ""
+msgstr "%(petition.comments)s Comentarios"
 
 #: campaigns/templates/campaigns/_partial_signatures.html:15
 msgid "Recent comments..."
