@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-05 11:44-0400\n"
-"PO-Revision-Date: 2024-07-12 02:09+0000\n"
+"PO-Revision-Date: 2024-07-12 14:09+0000\n"
 "Last-Translator: Yolanda Gomez Galvez <y.gomezz.galvez@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/"
 "philly-bike-action/apps-bikeaction-org-django/es/>\n"
@@ -179,114 +179,117 @@ msgstr "Ya has iniciado sesión como %(request.user.email)s."
 
 #: pbaabp/templates/email_login.html:11
 msgid "Send log in link"
-msgstr ""
+msgstr "Enviar enlace de inicio de sesión"
 
 #: pbaabp/templates/email_login_success.html:4
 msgid "We sent a log in link. Check your email."
 msgstr ""
+"Le enviamos un enlace de inicio de sesión. Consulte su correo electrónico."
 
 #: profiles/forms.py:12 profiles/forms.py:87
 #: profiles/templates/profiles/profile_detail.html:10
 msgid "First Name"
-msgstr ""
+msgstr "Nombre"
 
 #: profiles/forms.py:13 profiles/forms.py:88
 #: profiles/templates/profiles/profile_detail.html:14
 msgid "Last Name"
-msgstr ""
+msgstr "Apellido(s)"
 
 #: profiles/forms.py:15 profiles/models.py:30
 #: profiles/templates/profiles/profile_detail.html:23
 msgid "Council District"
-msgstr ""
+msgstr "Distrito"
 
 #: profiles/forms.py:25 profiles/models.py:42
 #: profiles/templates/profiles/profile_detail.html:27
 msgid "Zip Code"
-msgstr ""
+msgstr "Código postal"
 
 #: profiles/forms.py:27 profiles/models.py:45
 msgid "Newsletter Opt-In"
-msgstr ""
+msgstr "Suscripción al boletín"
 
 #: profiles/forms.py:93 profiles/templates/profiles/profile_detail.html:18
 msgid "Email"
-msgstr ""
+msgstr "Correo electrónico"
 
 #: profiles/models.py:11
 msgid "N/A - I do not live in Philadelphia"
-msgstr ""
+msgstr "N/A - No vivo en Filadelfia"
 
 #: profiles/models.py:12
 msgid "District 1"
-msgstr ""
+msgstr "Distrito 1"
 
 #: profiles/models.py:13
 msgid "District 2"
-msgstr ""
+msgstr "Distrito 2"
 
 #: profiles/models.py:14
 msgid "District 3"
-msgstr ""
+msgstr "Distrito 3"
 
 #: profiles/models.py:15
 msgid "District 4"
-msgstr ""
+msgstr "Distrito 4"
 
 #: profiles/models.py:16
 msgid "District 5"
-msgstr ""
+msgstr "Distrito 5"
 
 #: profiles/models.py:17
 msgid "District 6"
-msgstr ""
+msgstr "Distrito 6"
 
 #: profiles/models.py:18
 msgid "District 7"
-msgstr ""
+msgstr "Distrito 7"
 
 #: profiles/models.py:19
 msgid "District 8"
-msgstr ""
+msgstr "Distrito 8"
 
 #: profiles/models.py:20
 msgid "District 9"
-msgstr ""
+msgstr "Distrito 9"
 
 #: profiles/models.py:21
 msgid "District 10"
-msgstr ""
+msgstr "Distrito 10"
 
 #: profiles/templates/profiles/_donations_partial.html:10
 msgid "Recent Donations"
-msgstr ""
+msgstr "Donaciones recientes"
 
 #: profiles/templates/profiles/_donations_partial.html:42
 #, python-format
 msgid ""
 "View full donation history <a href=\"%(donation_history_url)s\">here</a>."
 msgstr ""
+"Vea el historial completo de donaciones <a href=\"%(donation_history_url)s\""
+">aquí</a>."
 
 #: profiles/templates/profiles/_donations_partial.html:46
 msgid "Subscriptions"
-msgstr ""
+msgstr "Subscripciones"
 
 #: profiles/templates/profiles/_donations_partial.html:51
 msgid "Subscription"
-msgstr ""
+msgstr "Subscripciones"
 
 #: profiles/templates/profiles/_donations_partial.html:53
 #: profiles/templates/profiles/_donations_partial.html:84
 msgid "Actions"
-msgstr ""
+msgstr "Acciones"
 
 #: profiles/templates/profiles/_donations_partial.html:61
 msgid "change"
-msgstr ""
+msgstr "cambiar"
 
 #: profiles/templates/profiles/_donations_partial.html:62
 msgid "cancel"
-msgstr ""
+msgstr "cancelar"
 
 #: profiles/templates/profiles/_donations_partial.html:69
 msgid ""
