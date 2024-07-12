@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-05 11:44-0400\n"
-"PO-Revision-Date: 2024-07-12 14:09+0000\n"
+"PO-Revision-Date: 2024-07-12 23:09+0000\n"
 "Last-Translator: Yolanda Gomez Galvez <y.gomezz.galvez@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/"
 "philly-bike-action/apps-bikeaction-org-django/es/>\n"
@@ -296,72 +296,76 @@ msgid ""
 "<b>Note:</b> changing from a monthly to yearly, or yearly to monthly "
 "donation will <i>immediately</i> charge you the new amount."
 msgstr ""
+"<b>Nota:</b> al cambiar de una donación mensual a anual, o de anual a "
+"mensual, se te cobrará <i>inmediatamente</i> la nueva cantidad."
 
 #: profiles/templates/profiles/_donations_partial.html:70
 msgid ""
 "Changing the amount you donate alone will charge you the new amount the next "
 "time you are charged."
 msgstr ""
+"Cambiando solo la cantidad que donas te cobrará la nueva cantidad la próxima "
+"vez que se efectúe el pago."
 
 #: profiles/templates/profiles/_donations_partial.html:73
 #: profiles/templates/profiles/_donations_partial.html:114
 #: profiles/templates/profiles/profile_detail.html:73
 msgid "Setup a recurring donation"
-msgstr ""
+msgstr "Configurar una donación periódica"
 
 #: profiles/templates/profiles/_donations_partial.html:77
 msgid "Stored Payment Methods"
-msgstr ""
+msgstr "Guardar Métodos de Pago"
 
 #: profiles/templates/profiles/_donations_partial.html:81
 msgid "Method"
-msgstr ""
+msgstr "Método"
 
 #: profiles/templates/profiles/_donations_partial.html:82
 msgid "Details"
-msgstr ""
+msgstr "Detalles"
 
 #: profiles/templates/profiles/_donations_partial.html:83
 msgid "Default"
-msgstr ""
+msgstr "Predeterminado"
 
 #: profiles/templates/profiles/_donations_partial.html:98
 #: profiles/templates/profiles/_donations_partial.html:103
 msgid "remove"
-msgstr ""
+msgstr "eliminar"
 
 #: profiles/templates/profiles/_donations_partial.html:102
 msgid "make default"
-msgstr ""
+msgstr "hacer predeterminado"
 
 #: profiles/templates/profiles/_donations_partial.html:110
 msgid "Add new payment method"
-msgstr ""
+msgstr "Añadir nuevo método de pago"
 
 #: profiles/templates/profiles/profile_detail.html:6
 #, python-format
 msgid "Welcome to Philly Bike Action, %(profile.user.first_name)s"
-msgstr ""
+msgstr "Bienvenido/a/e a Philly Bike Action, %(profile.user.first_name)s"
 
 #: profiles/templates/profiles/profile_detail.html:31
 msgid "Newsletter"
-msgstr ""
+msgstr "Boletín"
 
 #: profiles/templates/profiles/profile_detail.html:32
 msgid "Subscribed"
-msgstr ""
+msgstr "Suscrito"
 
 #: profiles/templates/profiles/profile_detail.html:32
 msgid "Not Subscribed"
-msgstr ""
+msgstr "No suscrito"
 
 #: profiles/templates/profiles/profile_detail.html:35
 msgid "Discord"
-msgstr ""
+msgstr "Discord"
 
 #: profiles/templates/profiles/profile_detail.html:40
 msgid "Connect your discord account"
-msgstr ""
+msgstr "Conecta tu cuenta de Discord"
 
 #: profiles/templates/profiles/profile_detail.html:47
 #, python-format
@@ -369,72 +373,80 @@ msgid ""
 "Need to update any of the above? <a href=\"%(profile_update_url)s\">Click "
 "Here!</a>"
 msgstr ""
+"¿Necesitas actualizar algo de arriba? <a href=\"%(profile_update_url)s\">¡"
+"Pincha aquí!</a>"
 
 #: profiles/templates/profiles/profile_detail.html:50
 #, python-format
 msgid "Change your password <a href=\"%(change_password_url)s\">here</a>."
-msgstr ""
+msgstr "Cambia tu contraseña <a href=\"%(change_password_url)s\">aquí</a>."
 
 #: profiles/templates/profiles/profile_detail.html:52
 msgid "Your account does not have a password set."
-msgstr ""
+msgstr "Tu cuenta todavía no tiene una contraseña."
 
 #: profiles/templates/profiles/profile_detail.html:54
 #, python-format
 msgid ""
 "Set a password for your account <a href=\"%(set_password_url)s\">here</a>."
 msgstr ""
+"Elija una contraseña para su cuenta <a href=\"%(set_password_url)s\""
+">aquí</a>."
 
 #: profiles/templates/profiles/profile_detail.html:59
 msgid "Donations"
-msgstr ""
+msgstr "Donaciones"
 
 #: profiles/templates/profiles/profile_detail.html:61
 msgid "Make a one-time donation"
-msgstr ""
+msgstr "Haz una donación puntual"
 
 #: profiles/templates/profiles/profile_detail.html:64
 msgid ""
 "Philly Bike Action is a social welfare organization incorporated in the "
 "Commonwealth of Pennsylvania."
 msgstr ""
+"Philly Bike Action es una organización de bienestar social constituida en la "
+"Commonwealth de Pensilvania."
 
 #: profiles/templates/profiles/profile_detail.html:65
 msgid ""
 "Contributions to Philly Bike Action are not deductible as charitable "
 "contributions for federal income tax purposes."
 msgstr ""
+"Las contribuciones a Philly Bike Action no son deducibles como "
+"contribuciones caritativas a efectos del impuesto federal sobre la renta."
 
 #: profiles/templates/profiles/profile_form.html:5
 #, python-format
 msgid "Updating profile for %(profile.user.first_name)s"
-msgstr ""
+msgstr "Actualizando el perfil para %(profile.user.first_name)s"
 
 #: profiles/templates/profiles/profile_form.html:28
 #, python-format
 msgid "Change your password <a href=\"%(change_password_url)s\">here</a>"
-msgstr ""
+msgstr "Cambia tu contraseña <a href=\"%(change_password_url)s\">aquí</a>"
 
 #: profiles/templates/profiles/profile_form.html:31
 msgid "Submit"
-msgstr ""
+msgstr "Enviar"
 
 #: profiles/templates/profiles/shirtinterest_confirm_delete.html:5
 msgid "Are you sure?"
-msgstr ""
+msgstr "¿Estás seguro/a/e?"
 
 #: profiles/templates/profiles/shirtinterest_confirm_delete.html:28
 msgid "Yes"
-msgstr ""
+msgstr "Sí"
 
 #: profiles/templates/profiles/shirtinterest_confirm_delete.html:29
 msgid "No"
-msgstr ""
+msgstr "No"
 
 #: templates/account/login.html:5 templates/account/login.html:10
 #: templates/account/login.html:32
 msgid "Sign In"
-msgstr ""
+msgstr "Regístrate"
 
 #: templates/account/login.html:13
 #, python-format
@@ -442,6 +454,8 @@ msgid ""
 "If you have not created an account yet, then please <a href=\"%(signup_url)s"
 "\">sign up</a> first."
 msgstr ""
+"Si todavía no has creado una cuenta, por favor <a href=\"%(signup_url)s\""
+">regístrate</a> primero."
 
 #: templates/account/login.html:46
 #, python-format
@@ -449,20 +463,22 @@ msgid ""
 "You can also login by having a link sent to your email <a href="
 "\"%(email_login_url)s\">here</a>."
 msgstr ""
+"También puedes iniciar sesión enviando un enlace a tu correo electrónico <a "
+"href=\"%(email_login_url)s\">aquí</a>."
 
 #: templates/account/logout.html:4 templates/account/logout.html:8
 #: templates/account/logout.html:24
 msgid "Sign Out"
-msgstr ""
+msgstr "Cerrar sesión"
 
 #: templates/account/logout.html:10
 msgid "Are you sure you want to sign out?"
-msgstr ""
+msgstr "¿Estás seguro/a/e de que quieres cerrar sesión?"
 
 #: templates/account/signup.html:5 templates/account/signup.html:10
 #: templates/account/signup.html:32
 msgid "Sign Up"
-msgstr ""
+msgstr "Regístrate"
 
 #: templates/account/signup.html:13
 #, python-format
