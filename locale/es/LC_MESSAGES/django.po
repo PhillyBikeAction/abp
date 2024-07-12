@@ -3,129 +3,130 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-05 11:44-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2024-07-12 14:09+0000\n"
+"Last-Translator: Yolanda Gomez Galvez <y.gomezz.galvez@gmail.com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/"
+"philly-bike-action/apps-bikeaction-org-django/es/>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #: campaigns/templates/campaigns/_partial_signatures.html:14
 #, python-format
 msgid "%(petition.comments)s Comments"
-msgstr ""
+msgstr "%(petition.comments)s Comentarios"
 
 #: campaigns/templates/campaigns/_partial_signatures.html:15
 msgid "Recent comments..."
-msgstr ""
+msgstr "Comentarios recientes..."
 
 #: campaigns/templates/campaigns/campaign_detail.html:23
 #: campaigns/templates/campaigns/campaign_detail.html:34
 msgid "Take Action Now!"
-msgstr ""
+msgstr "¡Actúa ahora!"
 
 #: campaigns/templates/campaigns/campaign_detail.html:27
 msgid "This campaign has been completed."
-msgstr ""
+msgstr "Esta campaña ha sido finalizada."
 
 #: campaigns/templates/campaigns/campaign_detail.html:38
 msgid "Make a donation"
-msgstr ""
+msgstr "Haz una donación económica"
 
 #: campaigns/templates/campaigns/campaign_detail.html:39
 msgid "Donate Now!"
-msgstr ""
+msgstr "¡Dona Ahora!"
 
 #: campaigns/templates/campaigns/campaign_detail.html:46
 msgid "🎉 Thank you for being a supporter 🎉"
-msgstr ""
+msgstr "🎉 Gracias por tu apoyo 🎉"
 
 #: campaigns/templates/campaigns/campaign_detail.html:47
 msgid "Manage your recurring donation"
-msgstr ""
+msgstr "Gestiona tu donación periódica"
 
 #: campaigns/templates/campaigns/campaign_detail.html:51
 msgid "Become a monthly supporter"
-msgstr ""
+msgstr "Haz un donativo mensual"
 
 #: campaigns/templates/campaigns/campaign_detail.html:52
 msgid "Become a Supporter!"
-msgstr ""
+msgstr "¡Conviértete en Colaborador/a!"
 
 #: campaigns/templates/campaigns/campaign_detail.html:58
 msgid "Attend an event"
-msgstr ""
+msgstr "Asiste a un evento"
 
 #: campaigns/templates/campaigns/campaign_detail.html:68
 msgid "Sign the petition"
 msgid_plural "Sign a petition"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Firma la petición"
+msgstr[1] "Firma una petición"
 
 #: campaigns/templates/campaigns/campaign_list.html:21
 msgid "DRAFT"
-msgstr ""
+msgstr "BORRADOR"
 
 #: campaigns/templates/petition/form.html:31
 msgid "This is a preview of the email that will be sent when you submit:"
-msgstr ""
+msgstr "Esta es una vista previa del correo electrónico que se enviará:"
 
 #: campaigns/templates/petition/sign.html:10
 msgid "Sign this petition!"
-msgstr ""
+msgstr "¡Firma la petición!"
 
 #: campaigns/templates/petition/view.html:3
 msgid "Petition"
-msgstr ""
+msgstr "Petición"
 
 #: events/templates/signin-kiosk-postroll.html:10
 #, python-format
 msgid "Thanks for signing in to Philly Bike Action %(event.title)s!"
-msgstr ""
+msgstr "¡Gracias por iniciar sesión en Philly Bike Action %(event.title)s!"
 
 #: events/templates/signin-kiosk-postroll.html:13
 msgid "Page will reload in"
-msgstr ""
+msgstr "La página se reiniciará en"
 
 #: events/templates/signin.html:15
 #, python-format
 msgid "Welcome to Philly Bike Action %(event.title)s"
-msgstr ""
+msgstr "Bienvenido/a a Philly Bike Action %(event.title)s"
 
 #: events/templates/signin.html:16
 msgid "Sign in to let us know a little more about you!"
-msgstr ""
+msgstr "¡Inicia sesión para saber un poquito más de ti!"
 
 #: events/templates/signin.html:41
 msgid "Sign me in!"
-msgstr ""
+msgstr "¡Iniciar mi sesión!"
 
 #: membership/templates/_donation_history_partial.html:11
 #: profiles/templates/profiles/_donations_partial.html:29
 msgid "recurring"
-msgstr ""
+msgstr "periódico"
 
 #: membership/templates/_donation_history_partial.html:11
 #: profiles/templates/profiles/_donations_partial.html:29
 msgid "one-time"
-msgstr ""
+msgstr "única"
 
 #: membership/templates/change_recurring_donation.html:5
 msgid "Change Recurring Donation"
-msgstr ""
+msgstr "Cambiar Donación Periódica"
 
 #: membership/templates/change_recurring_donation.html:28
 #: membership/templates/setup_recurring_donation.html:29
 msgid "Submit!"
-msgstr ""
+msgstr "¡Enviar!"
 
 #: membership/templates/checkout_session.html:14
 #: membership/templates/checkout_session.html:16
@@ -135,18 +136,18 @@ msgstr ""
 #: profiles/templates/tshirt_checkout_session.html:14
 #: profiles/templates/tshirt_checkout_session.html:16
 msgid "⬅️ Go Back"
-msgstr ""
+msgstr "⬅️ Vuelve hacia atrás"
 
 #: membership/templates/donation_history.html:9
 #: profiles/templates/profiles/_donations_partial.html:14
 msgid "Amount"
-msgstr ""
+msgstr "Cantidad"
 
 #: membership/templates/donation_history.html:10
 #: profiles/templates/profiles/_donations_partial.html:15
 #: profiles/templates/profiles/_donations_partial.html:52
 msgid "Status"
-msgstr ""
+msgstr "Estado"
 
 #: membership/templates/donation_history.html:11
 #: profiles/templates/profiles/_donations_partial.html:16
@@ -156,136 +157,139 @@ msgstr ""
 #: membership/templates/donation_history.html:12
 #: profiles/templates/profiles/_donations_partial.html:17
 msgid "Source"
-msgstr ""
+msgstr "Fuente"
 
 #: membership/templates/donation_history.html:13
 #: profiles/templates/profiles/_donations_partial.html:18
 msgid "Date"
-msgstr ""
+msgstr "Fecha"
 
 #: membership/templates/donation_history.html:16
 msgid "Loading your donations data..."
-msgstr ""
+msgstr "Cargando tus datos de donaciones..."
 
 #: membership/templates/setup_recurring_donation.html:6
 msgid "Recurring Donation Setup"
-msgstr ""
+msgstr "Configuración de tu donación periódica"
 
 #: pbaabp/templates/email_login.html:5
 #, python-format
 msgid "You are already logged in as %(request.user.email)s."
-msgstr ""
+msgstr "Ya has iniciado sesión como %(request.user.email)s."
 
 #: pbaabp/templates/email_login.html:11
 msgid "Send log in link"
-msgstr ""
+msgstr "Enviar enlace de inicio de sesión"
 
 #: pbaabp/templates/email_login_success.html:4
 msgid "We sent a log in link. Check your email."
 msgstr ""
+"Le enviamos un enlace de inicio de sesión. Consulte su correo electrónico."
 
 #: profiles/forms.py:12 profiles/forms.py:87
 #: profiles/templates/profiles/profile_detail.html:10
 msgid "First Name"
-msgstr ""
+msgstr "Nombre"
 
 #: profiles/forms.py:13 profiles/forms.py:88
 #: profiles/templates/profiles/profile_detail.html:14
 msgid "Last Name"
-msgstr ""
+msgstr "Apellido(s)"
 
 #: profiles/forms.py:15 profiles/models.py:30
 #: profiles/templates/profiles/profile_detail.html:23
 msgid "Council District"
-msgstr ""
+msgstr "Distrito"
 
 #: profiles/forms.py:25 profiles/models.py:42
 #: profiles/templates/profiles/profile_detail.html:27
 msgid "Zip Code"
-msgstr ""
+msgstr "Código postal"
 
 #: profiles/forms.py:27 profiles/models.py:45
 msgid "Newsletter Opt-In"
-msgstr ""
+msgstr "Suscripción al boletín"
 
 #: profiles/forms.py:93 profiles/templates/profiles/profile_detail.html:18
 msgid "Email"
-msgstr ""
+msgstr "Correo electrónico"
 
 #: profiles/models.py:11
 msgid "N/A - I do not live in Philadelphia"
-msgstr ""
+msgstr "N/A - No vivo en Filadelfia"
 
 #: profiles/models.py:12
 msgid "District 1"
-msgstr ""
+msgstr "Distrito 1"
 
 #: profiles/models.py:13
 msgid "District 2"
-msgstr ""
+msgstr "Distrito 2"
 
 #: profiles/models.py:14
 msgid "District 3"
-msgstr ""
+msgstr "Distrito 3"
 
 #: profiles/models.py:15
 msgid "District 4"
-msgstr ""
+msgstr "Distrito 4"
 
 #: profiles/models.py:16
 msgid "District 5"
-msgstr ""
+msgstr "Distrito 5"
 
 #: profiles/models.py:17
 msgid "District 6"
-msgstr ""
+msgstr "Distrito 6"
 
 #: profiles/models.py:18
 msgid "District 7"
-msgstr ""
+msgstr "Distrito 7"
 
 #: profiles/models.py:19
 msgid "District 8"
-msgstr ""
+msgstr "Distrito 8"
 
 #: profiles/models.py:20
 msgid "District 9"
-msgstr ""
+msgstr "Distrito 9"
 
 #: profiles/models.py:21
 msgid "District 10"
-msgstr ""
+msgstr "Distrito 10"
 
 #: profiles/templates/profiles/_donations_partial.html:10
 msgid "Recent Donations"
-msgstr ""
+msgstr "Donaciones recientes"
 
 #: profiles/templates/profiles/_donations_partial.html:42
 #, python-format
 msgid ""
 "View full donation history <a href=\"%(donation_history_url)s\">here</a>."
 msgstr ""
+"Vea el historial completo de donaciones <a href=\"%(donation_history_url)s\""
+">aquí</a>."
 
 #: profiles/templates/profiles/_donations_partial.html:46
 msgid "Subscriptions"
-msgstr ""
+msgstr "Subscripciones"
 
 #: profiles/templates/profiles/_donations_partial.html:51
 msgid "Subscription"
-msgstr ""
+msgstr "Subscripciones"
 
 #: profiles/templates/profiles/_donations_partial.html:53
 #: profiles/templates/profiles/_donations_partial.html:84
 msgid "Actions"
-msgstr ""
+msgstr "Acciones"
 
 #: profiles/templates/profiles/_donations_partial.html:61
 msgid "change"
-msgstr ""
+msgstr "cambiar"
 
 #: profiles/templates/profiles/_donations_partial.html:62
 msgid "cancel"
-msgstr ""
+msgstr "cancelar"
 
 #: profiles/templates/profiles/_donations_partial.html:69
 msgid ""
