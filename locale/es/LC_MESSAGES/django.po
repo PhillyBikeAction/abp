@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-05 11:44-0400\n"
-"PO-Revision-Date: 2024-07-12 23:09+0000\n"
+"PO-Revision-Date: 2024-07-14 23:09+0000\n"
 "Last-Translator: Yolanda Gomez Galvez <y.gomezz.galvez@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/"
 "philly-bike-action/apps-bikeaction-org-django/es/>\n"
@@ -59,7 +59,7 @@ msgstr "Haz un donativo mensual"
 
 #: campaigns/templates/campaigns/campaign_detail.html:52
 msgid "Become a Supporter!"
-msgstr "¡Conviértete en Colaborador/a!"
+msgstr "¡Conviértete en Colaborador/a/e!"
 
 #: campaigns/templates/campaigns/campaign_detail.html:58
 msgid "Attend an event"
@@ -99,7 +99,7 @@ msgstr "La página se reiniciará en"
 #: events/templates/signin.html:15
 #, python-format
 msgid "Welcome to Philly Bike Action %(event.title)s"
-msgstr "Bienvenido/a a Philly Bike Action %(event.title)s"
+msgstr "Bienvenido/a/e a Philly Bike Action %(event.title)s"
 
 #: events/templates/signin.html:16
 msgid "Sign in to let us know a little more about you!"
@@ -276,7 +276,7 @@ msgstr "Subscripciones"
 
 #: profiles/templates/profiles/_donations_partial.html:51
 msgid "Subscription"
-msgstr "Subscripciones"
+msgstr "Subscripción"
 
 #: profiles/templates/profiles/_donations_partial.html:53
 #: profiles/templates/profiles/_donations_partial.html:84
@@ -485,40 +485,44 @@ msgstr "Regístrate"
 msgid ""
 "Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
 msgstr ""
+"¿Ya tienes una cuenta? Entonces, por favor, <a href=\"%(login_url)s\">inicia "
+"sesión</a>."
 
 #: templates/base.html:15 templates/base.html:28 templates/base.html:70
 msgid "Philly Bike Action!"
-msgstr ""
+msgstr "¡Philly Bike Action!"
 
 #: templates/base.html:28
 msgid "Philly Bike Action! Home"
-msgstr ""
+msgstr "¡Philly Bike Action! Página principal"
 
 #: templates/base.html:71
 msgid ""
 "Safe, usable, protected, interconnected bike infrastructure for Philadelphia."
 msgstr ""
+"Infraestructura para bicicletas segura, útil, protegida e interconectada en "
+"Filadelfia."
 
 #: templates/base.html:103
 msgid "Find us on Social Media"
-msgstr ""
+msgstr "Encuéntranos en Redes Sociales"
 
 #: templates/base.html:104
 msgid "@phlbikeaction on twitter"
-msgstr ""
+msgstr "@phlbikeaction en Twitter (X)"
 
 #: templates/base.html:105
 msgid "@phlbikeaction on instagram"
-msgstr ""
+msgstr "@phlbikeaction en Instagram"
 
 #: templates/base.html:106 templates/base.html:108
 msgid "Philly Bike Action Discord"
-msgstr ""
+msgstr "Philly Bike Action en Discord"
 
 #: templates/base.html:107
 msgid "Join our Discord"
-msgstr ""
+msgstr "Únete a nuestro canal de Discord"
 
 #: templates/base.html:111
 msgid "©️ 2024 Philly Bike Action. All rights reserved."
-msgstr ""
+msgstr "©️ 2024 Philly Bike Action. Todos los derechos reservados."
