@@ -67,6 +67,7 @@
 {% if campaign.petitions.all and not campaign.status == "completed" %}
   <div id="petitions">
   {% for petition in campaign.petitions.all %}
+    {% if campaign.petitions.all|length > 0 %}<h2>{{ petition.title }}</h2>{% endif %}
     {% if petition.display_on_campaign_page %}
     <div class="petition">
       {% include 'petition/form.html' with petition=petition form=petition.form %}
@@ -82,6 +83,7 @@
 {% elif campaign.petitions.all and campaign.status == "completed" %}
   <div id="petitions">
   {% for petition in campaign.petitions.all %}
+    {% if campaign.petitions.all|length > 0 %}<h2>{{ petition.title }}</h2>{% endif %}
     {% if petition.display_on_campaign_page %}
     <div class="petition">
       {% include 'petition/view.html' with petition=petition form=petition.form %}

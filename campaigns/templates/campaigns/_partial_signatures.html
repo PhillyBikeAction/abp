@@ -2,7 +2,7 @@
 
 {% if petition.signatures.all %}
 <div class="signatures">
-  <h2>{{ petition.signatures.count }} Signatures{% if petition.campaign.status == "active" %} So Far!{% endif %}</h2>
+  <h2>{{ petition.signatures.count }} Submissions{% if petition.campaign.status == "active" %} So Far!{% endif %}</h2>
   {% if petition.signature_goal %}
   <div class="progress-bar-container">
     <div class="progress-bar" style="height: 2em; width: {{ petition.progress }}%">
