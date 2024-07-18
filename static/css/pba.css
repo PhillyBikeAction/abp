@@ -1,6 +1,6 @@
 /* Header and Nav */
 
-h1, h2, h3, h4, h5 {
+* {
   scroll-margin-top: 8em;
 }
 
@@ -136,7 +136,7 @@ h1, h2, h3, h4, h5 {
 
 @media only screen and (max-width: 600px) {
 
-  h1, h2, h3, h4, h5 {
+  * {
     scroll-margin-top: 5em;
   }
 
