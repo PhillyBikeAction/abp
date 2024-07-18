@@ -7,11 +7,7 @@ from campaigns.models import Campaign, Petition, PetitionSignature
 
 
 class CampaignAdmin(admin.ModelAdmin):
-    class Media:
-        css = {"all": ("css/tui-editor.css",)}
-
     readonly_fields = ["wordpress_id"]
-    formfield_overrides = {MarkdownField: {"widget": MarkdownEditorWidget}}
     autocomplete_fields = ["events"]
 
     def get_form(self, *args, **kwargs):
