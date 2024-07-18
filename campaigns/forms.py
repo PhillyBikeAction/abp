@@ -12,7 +12,7 @@ class PetitionSignatureForm(forms.ModelForm):
         model = PetitionSignature
         fields = Petition.PetitionSignatureChoices.values
         help_texts = {
-            "comment": "Your comment, which will be displayed on the petition page",
+            "comment": "Your comment, which will be displayed on the campaign page",
         }
 
     send_email = forms.BooleanField(
@@ -52,7 +52,11 @@ class PetitionSignatureForm(forms.ModelForm):
             ):
                 self.fields[field].required = True
 
-        if "comment" in self.fields.keys() and self.petition.email_include_comment:
+        if (
+            "comment" in self.fields.keys()
+            and self.petition.email_include_comment
+            and not self.petition.mailto_send
+        ):
             self.fields[
                 "comment"
             ].help_text += (
