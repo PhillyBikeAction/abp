@@ -7,12 +7,13 @@ from django.utils.text import slugify
 from markdownfield.models import RenderedMarkdownField
 from markdownfield.validators import VALIDATOR_NULL
 from multi_email_field.fields import MultiEmailField
+from ordered_model.models import OrderedModel
 
 from events.models import ScheduledEvent
 from pbaabp.models import ChoiceArrayField, MarkdownField
 
 
-class Campaign(models.Model):
+class Campaign(OrderedModel):
     class Status(models.TextChoices):
         DRAFT = "draft"
         ACTIVE = "active"
