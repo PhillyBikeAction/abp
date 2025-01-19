@@ -7,6 +7,7 @@ from wagtail import urls as wagtail_urls
 from wagtail.admin import urls as wagtailadmin_urls
 from wagtail.documents import urls as wagtaildocs_urls
 
+from pbaabp.admin import organizer_admin
 from pbaabp.views import EmailLoginView
 
 urlpatterns = [
@@ -24,6 +25,7 @@ urlpatterns = [
     path("projects/", include("projects.urls")),
     path("", include("pages.urls")),
     path("admin/", admin.site.urls),
+    path("organizer/", organizer_admin.urls),
     path("cms/", include(wagtailadmin_urls)),
     path("documents/", include(wagtaildocs_urls)),
     path("", include(wagtail_urls)),
