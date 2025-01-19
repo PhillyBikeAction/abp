@@ -6,6 +6,7 @@ from django.contrib.gis.forms.widgets import OSMWidget
 from django.db.models import Count, Q
 
 from facets.models import District, RegisteredCommunityOrganization
+from pbaabp.admin import organizer_admin
 from profiles.models import Profile
 
 
@@ -75,6 +76,11 @@ class DistrictFilter(admin.SimpleListFilter):
         return queryset
 
 
+class OrganizerDistrictFilter(DistrictFilter):
+    def lookups(self, request, model_amin):
+        return [(f.id, f.name) for f in request.user.profile.organizers.all() if f.targetable]
+
+
 class RCOFilter(admin.SimpleListFilter):
     title = "RCOs (verified)"
     parameter_name = "rcos_verified"
@@ -89,6 +95,16 @@ class RCOFilter(admin.SimpleListFilter):
             r = RegisteredCommunityOrganization.objects.get(id=self.value())
             return queryset.filter(location__within=r.mpoly)
         return queryset
+
+
+class OrganizerRCOFilter(RCOFilter):
+    def lookups(self, request, model_amin):
+        return [
+            (f.id, f.name)
+            for district in request.user.profile.organizers.all()
+            for f in district.intersecting_rcos.all()
+            if f.targetable
+        ]
 
 
 class ProfileAdmin(admin.ModelAdmin):
@@ -196,12 +212,44 @@ class ProfileAdmin(admin.ModelAdmin):
             )
 
 
+class OrganizerProfileAdmin(ProfileAdmin):
+    list_filter = [
+        ProfileCompleteFilter,
+        AppsConnectedFilter,
+        GeolocatedFilter,
+        OrganizerDistrictFilter,
+        OrganizerRCOFilter,
+    ]
+
+    def get_queryset(self, request):
+        qs = super().get_queryset(request)
+        q_objects = Q()
+        for district in request.user.profile.organizers.all():
+            q_objects |= Q(location__within=district.mpoly)
+        qs = qs.filter(q_objects)
+        return qs
+
+
 admin.site.register(Profile, ProfileAdmin)
+organizer_admin.register(Profile, OrganizerProfileAdmin)
 
 
 class UserAdmin(BaseUserAdmin):
     list_display = ["email", "first_name", "last_name", "is_staff", "is_superuser"]
 
 
+class OrganizerUserAdmin(UserAdmin):
+    list_display = ["email", "first_name", "last_name"]
+
+    def get_queryset(self, request):
+        qs = super().get_queryset(request)
+        q_objects = Q()
+        for district in request.user.profile.organizers.all():
+            q_objects |= Q(profile__location__within=district.mpoly)
+        qs = qs.filter(q_objects)
+        return qs
+
+
 admin.site.unregister(User)
 admin.site.register(User, UserAdmin)
+organizer_admin.register(User, OrganizerUserAdmin)

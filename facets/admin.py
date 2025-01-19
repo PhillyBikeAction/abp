@@ -25,6 +25,7 @@ class FacetAdmin(admin.ModelAdmin):
 
 class DistrictAdmin(FacetAdmin):
     list_display = ["name"]
+    autocomplete_fields = ["organizers"]
 
     formfield_overrides = {
         models.MultiPolygonField: {"widget": OSMWidget},
