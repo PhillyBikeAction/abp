@@ -1,0 +1,12 @@
+FROM python:3.11-bullseye
+RUN apt-get update && apt-get install -y gettext binutils libproj-dev gdal-bin
+ENV PYTHONUNBUFFERED=1
+ENV PYTHONDONTWRITEBYTECODE=1
+RUN mkdir /code
+RUN chown user /code
+ENV PATH="${PATH}:/home/user/.local/bin"
+WORKDIR /code
+COPY requirements /code/requirements
+COPY requirements.txt /code/
+RUN pip install -r requirements.txt
+COPY . /code/
