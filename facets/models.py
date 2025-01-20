@@ -30,7 +30,9 @@ class District(Facet):
     )
 
     targetable = models.BooleanField(default=True)
-    organizers = models.ManyToManyField("profiles.Profile", related_name="organizers", blank=True)
+    organizers = models.ManyToManyField(
+        "profiles.Profile", related_name="organized_districts", blank=True
+    )
 
 
 class RegisteredCommunityOrganization(Facet):
