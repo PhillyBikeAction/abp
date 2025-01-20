@@ -171,5 +171,9 @@ class Profile(models.Model):
             .all()
         )
 
+    @property
+    def is_organizer(self):
+        return bool(self.user.profile.organized_districts.all())
+
     def __str__(self):
         return f"{self.user.first_name} {self.user.last_name} - {self.user.email}"
